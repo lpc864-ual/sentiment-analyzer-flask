@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Sentimientos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Analizador de Sentimientos</h1>
+        <form action="{{ url_for('analyze') }}" method="post">
+            <textarea name="text" rows="4" placeholder="Ingrese el texto a analizar..."></textarea>
+            <button type="submit">Analizar</button>
+        </form>
+    </div>
+</body>
+</html>
