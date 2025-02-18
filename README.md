@@ -128,9 +128,9 @@ The only requirement is that you include the original copyright and license noti
 
 ## Contact
 
-Your Name - email@example.com
+Luis Alexander Peraza Corobo - lpc864@inlumine.ual.es
 
-Project Link: [https://github.com/yourusername/sentiment-analyzer-flask](https://github.com/yourusername/sentiment-analyzer-flask)
+Project Link: https://github.com/lpc864-ual/sentiment-analyzer-flask
 
 ## Acknowledgments
 
