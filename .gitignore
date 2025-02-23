@@ -9,4 +9,4 @@ __pycache__/
 *.pyc
 
 # Model files
-model/
+/model/
