@@ -7,3 +7,6 @@ venv/
 # Python cache files
 __pycache__/
 *.pyc
+
+# Model files
+model/
