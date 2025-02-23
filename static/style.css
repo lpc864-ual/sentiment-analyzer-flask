@@ -71,3 +71,98 @@ button:hover, .button:hover {
     color: #6c757d;
     background-color: #e9ecef;
 }
+
+.feedback-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.feedback-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.feedback-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.feedback-btn:hover {
+    opacity: 0.8;
+}
+
+.feedback-btn.positivo {
+    background-color: #d4edda;
+    color: #28a745;
+}
+
+.feedback-btn.neutral {
+    background-color: #e9ecef;
+    color: #6c757d;
+}
+
+.feedback-btn.negativo {
+    background-color: #f8d7da;
+    color: #dc3545;
+}
+
+/* Estilos para la página de entrenamiento */
+.training-animation {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.brain-icon {
+    font-size: 60px;
+    animation: pulse 2s infinite;
+}
+
+.loading-dots {
+    font-size: 40px;
+    height: 40px;
+}
+
+.loading-dots span {
+    animation: dots 1.5s infinite;
+    opacity: 0;
+}
+
+.loading-dots span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.loading-dots span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.training-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.note {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes dots {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}

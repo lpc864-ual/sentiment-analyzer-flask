@@ -15,6 +15,19 @@
             <h2>Sentimiento:</h2>
             <p class="sentiment {{ sentiment }}">{{ sentiment.title() }}</p>
             <p>Puntuación: {{ score }}</p>
+
+            <div class="feedback-section">
+                <h3>¿Estás de acuerdo con esta clasificación?</h3>
+                <form action="{{ url_for('feedback') }}" method="post">
+                    <input type="hidden" name="original_text" value="{{ text }}">
+                    <input type="hidden" name="original_sentiment" value="{{ sentiment }}">
+                    <div class="feedback-buttons">
+                        <button type="submit" name="feedback_sentiment" value="positivo" class="feedback-btn positivo">Positivo</button>
+                        <button type="submit" name="feedback_sentiment" value="neutral" class="feedback-btn neutral">Neutral</button>
+                        <button type="submit" name="feedback_sentiment" value="negativo" class="feedback-btn negativo">Negativo</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <a href="{{ url_for('home') }}" class="button">Analizar otro texto</a>
     </div>

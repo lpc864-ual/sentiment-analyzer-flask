@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reentrenando Modelo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta http-equiv="refresh" content="5;url={{ url_for('home') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="training-animation">
+            <div class="brain-icon">🧠</div>
+            <div class="loading-dots">
+                <span>.</span><span>.</span><span>.</span>
+            </div>
+        </div>
+        <h1>¡Gracias por tu feedback!</h1>
+        <div class="training-info">
+            <p>El modelo se está reentrenando con tu aportación.</p>
+            <p>Este proceso puede tomar unos momentos...</p>
+            <p class="note">Nota: El aprendizaje es gradual. El modelo puede necesitar varios ejemplos similares para identificar correctamente los patrones. ¡Tu feedback es muy valioso para mejorar!</p>
+        </div>
+    </div>
+</body>
+</html>
