@@ -65,6 +65,7 @@ python app.py
 │   ├── result.html
 │   └── training.html
 ├── requirements.txt      # Project dependencies
+├── LICENSE.md           # License information
 └── README.md            # This file
 ```
 
