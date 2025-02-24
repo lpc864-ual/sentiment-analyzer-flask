@@ -88,6 +88,9 @@ class SentimentAnalyzer:
         # batch_size: numero de muestras a utilizar. Si varia mucho el accuracy de un lote a otro, bajar el batch_size
         self.model.fit(X, y, epochs=10, batch_size=32, validation_split=0.2)
         
+        # Crear la carpeta 'model' si no existe
+        os.makedirs("model", exist_ok=True)
+
         # Guardar modelo y preprocesadores
         self.model.save('model/sentiment_model.h5')
         with open('model/tokenizer.pickle', 'wb') as handle:
