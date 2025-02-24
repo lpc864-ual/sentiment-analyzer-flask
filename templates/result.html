@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Resultado del Análisis</h1>
         <div class="result">
-            <h2>Texto analizado:</h2>
+            <h2>Opinión analizada:</h2>
             <p>{{ text }}</p>
             <h2>Sentimiento:</h2>
             <p class="sentiment {{ sentiment }}">{{ sentiment.title() }}</p>
@@ -29,7 +29,7 @@
                 </form>
             </div>
         </div>
-        <a href="{{ url_for('home') }}" class="button">Analizar otro texto</a>
+        <a href="{{ url_for('home') }}" class="button">Analizar otra opinión</a>
     </div>
 </body>
 </html>
