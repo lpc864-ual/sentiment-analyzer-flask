@@ -3754,4 +3754,6 @@ training_data = [
     {"text": "Bien", "sentiment": "positivo"},
     {"text": "Ole el producto", "sentiment": "positivo"},
     {"text": "Esta producto esta de pinga", "sentiment": "positivo"},
+    {"text": "me cago en la puta este producto es una mierda", "sentiment": "negativo"},
+    {"text": "este producto es una mierda", "sentiment": "negativo"},
 ]

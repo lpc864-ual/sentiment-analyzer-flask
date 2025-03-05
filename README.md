@@ -11,6 +11,10 @@ A deep learning-based sentiment analyzer for Spanish text. The application analy
 - Natural Language Processing with NLTK
 - LSTM neural network using TensorFlow/Keras
 
+## Requirements
+
+- Python 3.10 (required for compatibility with dependencies)
+
 ## Installation
 
 1. Clone the repository:
@@ -19,10 +23,15 @@ git clone https://github.com/[username]/spanish-sentiment-analyzer.git
 cd spanish-sentiment-analyzer
 ```
 
-2. Create a virtual environment (recommended):
+2. Create a virtual environment with Python 3.10 (required):
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+# On Windows:
+py -V:3.10 -m venv venv
+venv\Scripts\activate
+
+# On macOS/Linux:
+python3.10 -m venv venv
+source venv/bin/activate
 ```
 
 3. Install dependencies:
@@ -30,17 +39,11 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Initialize NLTK:
-```python
-import nltk
-nltk.download('stopwords')
-```
-
 ## Usage
 
 1. Start the application:
 ```bash
-python app.py
+py app.py
 ```
 
 2. Open your browser and visit `http://localhost:5000`
